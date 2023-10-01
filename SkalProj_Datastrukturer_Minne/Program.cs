@@ -57,7 +57,33 @@ namespace SkalProj_Datastrukturer_Minne
             //
             // Övning4 - Övning4: CheckParenthesis()
             //
-            // 1:   Sida 3 i PDF-dokument
+            // 1:   Jag använde mig av en lista.
+            //
+            //      *   Varje gång en öppnande ( { eller [
+            //          hittas i en sträng läggs den till i listan.
+            //
+            //      *   Så fort en stängande ( { eller [ hittas
+            //          så kontrolleras vilket tecken som senast
+            //          lades till i listan.
+            //
+            //          -   Om kontrollen visar att det är tillhörande 
+            //              öppnande tecken så tas det sista tecknet 
+            //              bort från listan och strängen är (hittills) välformulerad.
+            //
+            //          -   Om kontrollen visar att det INTE är tillhörande
+            //              öppnande tecken så är strängen inte välformulerad.
+            //
+            //      *   Eftersom de öppnande tecknen läggs till i den
+            //          ordningen dom skrivits in i strängen så måste
+            //          alltid det senast öppnade tecknet stängas innan
+            //          något annat kan stängas.
+            //
+            //      *   När hela strängen kontrollerats blir det "Success" om antalet
+            //          specialtecken i listan == 0. Det görs även en extrakontroll med en
+            //          success-bool som är true eller false beroende på hur kontrollerna gått.
+
+
+
         }
     }
 }
