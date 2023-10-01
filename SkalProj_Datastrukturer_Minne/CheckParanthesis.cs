@@ -34,7 +34,7 @@ namespace SkalProj_Datastrukturer_Minne
                     {
                         Console.SetCursorPosition(0, 7);
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("Du måste skriva något.\n                                               ");
+                        Console.WriteLine("Du måste skriva något.                                                                                               \n                                                                ");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     else if (userInput == "q" || userInput == "Q")
