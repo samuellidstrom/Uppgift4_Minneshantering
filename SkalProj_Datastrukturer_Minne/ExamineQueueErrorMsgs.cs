@@ -9,7 +9,8 @@
                 Console.Write("  Follow the instructions above, please.\n  Press any key...");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.ReadKey();
-                Console.Clear();
+                Console.SetCursorPosition(0, 9);
+                Console.Write("                                           \n                          ");
             }
         }
         public ExamineQueueErrorMsgs(char input)

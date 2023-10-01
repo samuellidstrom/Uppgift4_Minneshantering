@@ -46,9 +46,6 @@
 
                 } while (true);
 
-
-
-
                 switch (nav)
                 {
                     case 'q' or 'Q':
@@ -86,7 +83,6 @@
                         }
                         break;
                 }
-
             }
         }
     }

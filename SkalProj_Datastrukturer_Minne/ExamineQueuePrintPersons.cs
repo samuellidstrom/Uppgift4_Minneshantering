@@ -2,7 +2,6 @@
 {
     internal class ExamineQueuePrintPersons
     {
-
         public ExamineQueuePrintPersons(Queue<string> theLine)
         {
             Console.SetCursorPosition(1, 12);

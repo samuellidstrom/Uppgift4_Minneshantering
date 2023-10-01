@@ -16,21 +16,18 @@ namespace SkalProj_Datastrukturer_Minne
             Console.Clear();
             CheckParanthesisInfo checkParanthesisInfo = new CheckParanthesisInfo();
             var specCharacters = new List<char>();
-            string userInput = "";
-            
+            string userInput = "";           
 
             while (true)
             {
                 specCharacters.Clear();
                 bool success = true;
-                CheckParanthesisClearInput clearUserInput = new CheckParanthesisClearInput(userInput);
-                
+                CheckParanthesisClearInput clearUserInput = new CheckParanthesisClearInput(userInput);                
                 
                 do
                 {
                     Console.SetCursorPosition(12, 5);
                     userInput = Console.ReadLine();
-
                     Console.SetCursorPosition(12, 5);
                 
                     if (string.IsNullOrEmpty(userInput))
@@ -95,10 +92,8 @@ namespace SkalProj_Datastrukturer_Minne
 
                     }
                 }
-
                 CheckParanthesisMsg checkParanthesisMsg = new CheckParanthesisMsg(success, specCharacters, userInput);
             }
-
         }
     }
 }

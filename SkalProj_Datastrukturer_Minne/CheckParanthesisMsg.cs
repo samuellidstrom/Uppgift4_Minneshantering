@@ -11,9 +11,7 @@
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"CORRECT FORMULATION!      ");
                 Console.ForegroundColor = ConsoleColor.White;
-
             }
-
             else
             {
                 Console.SetCursorPosition(0, 7);

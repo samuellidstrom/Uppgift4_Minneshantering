@@ -23,19 +23,24 @@ namespace SkalProj_Datastrukturer_Minne
             //
             // Övning4 - Frågor på Övning 1: ExamineList()
             //
-            // 2:   Listans kapacitet ökar när antalet element som lagts till nått upp till listans kapacitet.
+            // 2:   Listans kapacitet ökar när antalet element som lagts till
+            //      nått upp till listans kapacitet.
             //
             // 3:   Listans kapacitet dubblas.
             //
-            // 4:   Listor fungerar så att dom har bakomliggande arrays som lagrar element. När en array skapas måste kapaciteten sättas direkt.
-            //      När man skapar en lista så skapas alltså en bakomliggande array med en liten, men fast, kapacitet.
-            //      När antalet element uppnått listans kapacitet så skapas en ny array (med dubbel kapacitet) dit alla element
+            // 4:   Listor fungerar så att dom har bakomliggande arrays som
+            //      lagrar element. När en array skapas måste kapaciteten sättas direkt.
+            //      När man skapar en lista så skapas alltså en bakomliggande array med
+            //      en liten, men fast, kapacitet. När antalet element uppnått listans
+            //      kapacitet så skapas en ny array (med dubbel kapacitet) dit alla element
             //      automatiskt kopieras, så att man kan fortsätta lägga till element.
             //
-            // 5:   Nej, en listas kapacitet minskar inte automatiskt när element tas bort från den.
-            //      Det går dock att manuellt minska listsans kapacitet med 'TrimExcess()'
+            // 5:   Nej, en listas kapacitet minskar inte automatiskt när
+            //      element tas bort från den. Det går dock att manuellt
+            //       minska listsans kapacitet med 'TrimExcess()'
             //
-            // 6:   Om du från början vet maxantalet för antalet element som ska lagras är det alltid bättre att använda en array.
+            // 6:   Om du från början vet maxantalet för antalet element som ska lagras
+            //      är det alltid bättre att använda en array.
             // 
             //-----------------------------------------------------
             //
@@ -46,6 +51,11 @@ namespace SkalProj_Datastrukturer_Minne
             //-----------------------------------------------------
             //
             // Övning4 - Övning3: ExamineStack()
+            //
+            // 1:   Sida 3 i PDF-dokument
+            //-----------------------------------------------------
+            //
+            // Övning4 - Övning4: CheckParenthesis()
             //
             // 1:   Sida 3 i PDF-dokument
         }

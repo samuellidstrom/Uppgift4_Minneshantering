@@ -13,31 +13,32 @@ namespace SkalProj_Datastrukturer_Minne
             */
 
             Queue<string> lineAtIca = new Queue<string>();
-
             while (true)
             {
                 ExamineQueuePrintInfo examineListMenu = new ExamineQueuePrintInfo(lineAtIca);
-                //ExamineListPrintItems examineListPrintItems = new ExamineListPrintItems(theList);
                 ExamineQueuePrintPersons examineQueuePrintPersons = new ExamineQueuePrintPersons(lineAtIca);
 
-                Console.SetCursorPosition(0, 8);
-                Console.Write("Your input: ");
-                string input = Console.ReadLine();
+                string input;
                 char nav = ' ';
 
-                //ToDo: Kolla varför översta if-satsen funkar men inte nedre gör det
-                //----------------------------------------------------------
-                if (input == null || input.Length < 1)
+                do
                 {
-                    //gör inget om den är null
-                }
-                else { nav = input[0]; }
+                    
+                    Console.SetCursorPosition(0, 8);
+                    Console.Write("Your input: ");
+                    input = Console.ReadLine();
 
-                //if (input != null || input.Length < 1)
-                //{
-                //    nav = input[0];
-                //}
-                //----------------------------------------------------------
+                    if (string.IsNullOrEmpty(input))
+                    {
+                        ExamineQueueErrorMsgs examineQueueErrorMsgs = new ExamineQueueErrorMsgs(); 
+                    }
+                    else
+                    {
+                        nav = input[0];
+                        break;
+                    }
+                } while (true);
+
                 switch (nav)
                 {
                     case 'q' or 'Q':
@@ -72,13 +73,6 @@ namespace SkalProj_Datastrukturer_Minne
                                 lineAtIca.Dequeue();
                             }
                         }
-                        //else if (theList.Contains(input.Substring(1)) != true)
-                        //{
-                        //    string msg = input.Substring(1);
-                        //    ExamineListErrorMsgs examineListErrorMsg3 = new ExamineListErrorMsgs(msg);
-                        //}
-                        //string itemRemove = input.Substring(1);
-                        //theList.Remove(itemRemove);
                         break;
                     default:
                         if (input != null)
@@ -89,13 +83,6 @@ namespace SkalProj_Datastrukturer_Minne
                 }
 
             }
-
-
-
-
-            /// <summary>
-            /// Examines the datastructure Stack
-            /// </summary>
         }
     }
 }

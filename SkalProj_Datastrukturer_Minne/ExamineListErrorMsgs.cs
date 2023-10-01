@@ -12,7 +12,6 @@
                 Console.Clear();
             }
         }
-
         public ExamineListErrorMsgs(char input)
         {
             string message;
@@ -24,7 +23,6 @@
             Console.ReadKey();
             Console.Clear();
         }
-
         public ExamineListErrorMsgs(string msg)
         {
             Console.ForegroundColor = ConsoleColor.Red;
